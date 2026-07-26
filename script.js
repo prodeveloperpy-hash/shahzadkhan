@@ -33,14 +33,16 @@ navLinks.forEach(links =>{
     navbar.classList.remove("active");
 }
 /*==================== SCROLL REVEAL ====================*/
-ScrollReveal({
-    reset: true,
-    distance: '80px',
-    duration: 2000,
-    delay: 200
-});
-ScrollReveal().reveal('.home-content, .heading', { origin: "top" });
-ScrollReveal().reveal('.home-img, .about-img, .services-container, .portfolio-box, .contact form', { origin: "bottom" });
+if (typeof ScrollReveal !== 'undefined') {
+    ScrollReveal({
+        reset: false,
+        distance: '80px',
+        duration: 1600,
+        delay: 150
+    });
+    ScrollReveal().reveal('.home-content, .heading', { origin: "top" });
+    ScrollReveal().reveal('.home-img, .about-img, .experience-card, .services-container, .portfolio-box, .contact form', { origin: "bottom" });
+}
 /*==================== TYPEWRITER EFFECT ====================*/
 class TypeWriter {
     constructor(element, words, wait = 2000) {

@@ -91,6 +91,60 @@ span {
 .home-content p {
   font-size: 1.6rem;
 }
+.freelance-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 2.4rem;
+}
+.platform-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+  padding: 1.1rem 1.8rem;
+  border: .15rem solid transparent;
+  border-radius: .8rem;
+  color: #fff;
+  font-size: 1.45rem;
+  font-weight: 600;
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+}
+.platform-btn:hover {
+  transform: translateY(-3px);
+}
+.platform-btn i {
+  font-size: 2.2rem;
+}
+.upwork-btn {
+  background: #14a800;
+  box-shadow: 0 0 1.4rem rgba(20, 168, 0, .28);
+}
+.upwork-btn:hover {
+  background: #108a00;
+  box-shadow: 0 0 2rem rgba(20, 168, 0, .42);
+}
+.fiverr-btn {
+  background: #1dbf73;
+  box-shadow: 0 0 1.4rem rgba(29, 191, 115, .28);
+}
+.fiverr-btn:hover {
+  background: #169b5d;
+  box-shadow: 0 0 2rem rgba(29, 191, 115, .42);
+}
+.platform-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: #fff;
+  color: #1dbf73;
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -.1rem;
+}
 .social-media a {
   display: inline-flex;
   justify-content: center;
@@ -150,14 +204,81 @@ span {
   font-size: 1.6rem;
   margin: 2rem 0 3rem 0;
 }
+.experience {
+  background: linear-gradient(180deg, rgba(7, 16, 40, .98), rgba(12, 25, 50, .98));
+}
+.experience .heading {
+  margin-bottom: 5rem;
+}
+.timeline {
+  position: relative;
+  max-width: 105rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 2.4rem;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  left: 1.1rem;
+  width: .2rem;
+  background: rgba(0, 238, 255, .35);
+}
+.experience-card {
+  position: relative;
+  margin-left: 4rem;
+  padding: 2.6rem 3rem;
+  border: 1px solid rgba(0, 238, 255, .16);
+  border-radius: 1.6rem;
+  background: rgba(255, 255, 255, .035);
+  box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, .22);
+}
+.experience-card::before {
+  content: "";
+  position: absolute;
+  left: -3.65rem;
+  top: 3rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: .3rem solid #071028;
+  border-radius: 50%;
+  background: var(--main-color);
+  box-shadow: 0 0 1.2rem var(--main-color);
+}
+.experience-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1.6rem;
+}
+.role-label,
+.experience-date {
+  color: var(--main-color);
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+.experience-card h3 {
+  margin-top: .4rem;
+  font-size: 2.4rem;
+}
+.experience-card ul {
+  padding-left: 2rem;
+}
+.experience-card li {
+  margin: .8rem 0;
+  color: #c8d4e3;
+  font-size: 1.55rem;
+  line-height: 1.65;
+}
 .services h2 {
   margin: 5rem;
 }
 .services-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
   gap: 2rem;
 }
 .services-container .services-box {
@@ -183,6 +304,20 @@ span {
 .services-box p{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
+}
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .8rem;
+}
+.skill-tags span {
+  padding: .65rem 1.1rem;
+  border: 1px solid rgba(0, 238, 255, .25);
+  border-radius: 2rem;
+  background: rgba(0, 238, 255, .07);
+  color: #d9fbff;
+  font-size: 1.25rem;
 }
 .portfolio{
   background-color: var(--second-bg-color);
@@ -251,6 +386,23 @@ gap: 2.5rem;
 }
 .contact h2{
   margin-bottom: 3rem;
+}
+.contact-details {
+  max-width: 90rem;
+  margin: 0 auto 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem 3rem;
+  font-size: 1.5rem;
+}
+.contact-details a,
+.contact-details span {
+  color: #c8d4e3;
+}
+.contact-details i {
+  margin-right: .5rem;
+  color: var(--main-color);
 }
 .contact form {
   max-width: 70rem;
@@ -473,11 +625,21 @@ body {
   height: 100%;
   }
   .services-container {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
   }
   .services h2 {
     margin-bottom: 3rem;
+  }
+  .experience-top {
+    flex-direction: column;
+    gap: .8rem;
+  }
+  .experience-card {
+    margin-left: 3rem;
+    padding: 2.2rem;
+  }
+  .experience-card::before {
+    left: -2.65rem;
   }
   .portfolio h2 {
     margin-bottom: 3rem;
@@ -494,6 +656,10 @@ body {
 @media(max-width: 450px){
   html{
     font-size: 50%;
+  }
+  .freelance-links {
+    flex-direction: column;
+    align-items: stretch;
   }
   .contact form .input-box input{
     width: 100% ;

@@ -1,155 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Portfolio</title>
-    <!-- font awesome cdn link  -->
+    <meta name="description" content="Muhammad Shahzad — Full Stack, Data and AI Engineer portfolio.">
+    <title>Muhammad Shahzad | Full Stack, Data & AI Engineer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <!-- boxicons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- particle canvas + decorative blobs -->
     <canvas id="particles"></canvas>
     <div class="decor-blob blob-1"></div>
     <div class="decor-blob blob-2"></div>
     <div class="decor-blob blob-3"></div>
 
-    <!-- Header Section Design-->
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <i class='bx  bx-menu' id="menu-icon"></i>
+        <a href="#home" class="logo">Portfolio</a>
+        <i class="bx bx-menu" id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <!-- Home Section Design -->
+
     <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, It's me</h3>
-            <h2>shahzad khan</h2>
-            <h3>and I'm a <span class="typewrite" data-words='["Full Stack Developer","Data Scientist ","Data Analytics Expert","No‑code Automation & AI Expert"]' data-wait="2000"></span></h3>
-            <p>I’m a Full‑Stack developer and solutions engineer specializing in full‑stack development, automation, AI, and data science.
-               I build end-to-end web applications using Python, JavaScript, Django, SQL, and PostgreSQL, and create automation pipelines
-               and machine learning solutions. I deliver efficient, secure, and scalable systems with clean, responsive user interfaces.</p>
-            <div class="social-media">
-                <a href="#"><i class="bx bxl-facebook"></i></a>
-                <a href="#"><i class="bx bxl-twitter"></i></a>
-                <a href="#"><i class="bx bxl-linkedin"></i></a>
-                <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+            <h2>Muhammad Shahzad</h2>
+            <h3>and I'm a <span class="typewrite"
+                data-words='["Full Stack Developer","Data & AI Engineer","Analytics Engineer","Cloud Solutions Engineer","AI Engineer","GHL Expert"]'
+                data-wait="2000"></span></h3>
+            <p>I'm a Full Stack, Data, and AI Engineer with over six years of experience building scalable applications,
+                data platforms, AI solutions, and business intelligence dashboards on Google Cloud Platform.</p>
+            <div class="freelance-links">
+                <a href="https://www.upwork.com/freelancers/~01c6bbb90a62c0821f?mp_source=share"
+                    class="platform-btn upwork-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="bx bxl-upwork"></i> Hire Me on Upwork
+                </a>
+                <a href="https://www.fiverr.com/s/dDm5lEg"
+                    class="platform-btn fiverr-btn" target="_blank" rel="noopener noreferrer">
+                    <span class="platform-mark">fi</span> View My Fiverr
+                </a>
             </div>
-            <a href="#" class="btn">Download CV</a>
+            <div class="social-media">
+                <a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="bx bxl-instagram-alt"></i></a>
+            </div>
+            <a href="#experience" class="btn">View Experience</a>
         </div>
         <div class="home-img">
-            <img src="home.png" alt="">
+            <img src="home.png" alt="Muhammad Shahzad">
         </div>
     </section>
-    <!-- About Section Design -->
+
     <section class="about" id="about">
         <div class="about-img">
-            <img src="about.png" alt="">
+            <img src="about.png" alt="Muhammad Shahzad profile">
         </div>
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <h3>Full Stack Developer</h3>
-            <p>I’m a skilled Web Developer specializing in Python, JavaScript, Django, Bootstrap, and database
-                management. I focus on building efficient, responsive, and high-performing web applications with clean
-                design and seamless user experiences.</p>
-            <a href="#" class="btn">Read More</a>
+            <h3>Full Stack, Data & AI Engineer</h3>
+            <p>I design and deliver secure, high-performance multi-tenant systems, data pipelines, search platforms,
+                AI integrations, and BI dashboards. My work combines product engineering with GCP, analytics, and
+                compliance-focused development aligned with GDPR, PDPA, and SOC 2 standards.</p>
+            <a href="#skills" class="btn">Explore Skills</a>
         </div>
     </section>
-    <!-- Services Section Design -->
-    <section class="services" id="services">
-        <h2 class="heading">Our <span>Services</span></h2>
+
+    <section class="experience" id="experience">
+        <h2 class="heading">Work <span>Experience</span></h2>
+        <div class="timeline">
+            <article class="experience-card">
+                <div class="experience-top">
+                    <div>
+                        <span class="role-label">Full Stack Software Engineer</span>
+                        <h3>ISHO Tech</h3>
+                    </div>
+                    <span class="experience-date">Jan 2023 – Present</span>
+                </div>
+                <ul>
+                    <li>Developed Freshdesk and Pipedrive CRM solutions with lifecycle, calendar, and email integrations.</li>
+                    <li>Led ReactJS and Django REST Framework implementation for a high-performance multi-tenant platform.</li>
+                    <li>Applied GDPR, PDPA, and SOC 2 compliant engineering standards.</li>
+                </ul>
+            </article>
+            <article class="experience-card">
+                <div class="experience-top">
+                    <div>
+                        <span class="role-label">Search / Analytics Engineer</span>
+                        <h3>Bisviews</h3>
+                    </div>
+                    <span class="experience-date">Sep 2024 – Sep 2025</span>
+                </div>
+                <ul>
+                    <li>Built an intelligent talent-pool search platform with relevance ranking algorithms.</li>
+                    <li>Created Kibana dashboards for platform performance, user activity, and conversion monitoring.</li>
+                    <li>Synchronized Elasticsearch and BigQuery for the data warehouse and recommendation tuning.</li>
+                </ul>
+            </article>
+            <article class="experience-card">
+                <div class="experience-top">
+                    <div>
+                        <span class="role-label">Data & AI Engineer</span>
+                        <h3>Fashion Commerce</h3>
+                    </div>
+                    <span class="experience-date">Jul 2021 – Dec 2023</span>
+                </div>
+                <ul>
+                    <li>Developed and integrated AI solutions for an e-commerce platform.</li>
+                    <li>Researched AI-assisted B2B marketing solutions.</li>
+                    <li>Delivered dashboards for campaign, conversion, and lead-tracking insights.</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section class="services" id="skills">
+        <h2 class="heading">Technical <span>Skills</span></h2>
         <div class="services-container">
             <div class="services-box">
-                <i class="bx bx-code-alt"></i>
-                <h3>Web Development</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti dignissimos quaerat, ratione sequi ex modi magni illo.</p>
-                <a href="#" class="btn">Read More</a>
+                <i class="bx bx-cloud"></i>
+                <h3>Cloud & Data</h3>
+                <p>Cloud data platforms, scalable deployment, search, and data warehouse workflows.</p>
+                <div class="skill-tags">
+                    <span>GCP</span><span>BigQuery</span><span>Cloud Run</span><span>Dataproc</span><span>Elasticsearch</span>
+                </div>
             </div>
-            <div class="services-box" >
-                <i class="bx bxs-paint"></i>
-                <h3>Graphic Design</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti dignissimos quaerat, ratione sequi ex modi magni illo.</p>
-                <a href="#" class="btn">Read More</a>
+            <div class="services-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>Languages & Full Stack</h3>
+                <p>Responsive applications and robust APIs using modern web, mobile, and backend technologies.</p>
+                <div class="skill-tags">
+                    <span>Python</span><span>JavaScript</span><span>Kotlin</span><span>SQL</span><span>ReactJS</span>
+                    <span>AngularJS</span><span>Django</span><span>DRF</span><span>FastAPI</span><span>Flask</span><span>ExpressJS</span>
+                </div>
             </div>
             <div class="services-box">
                 <i class="bx bx-bar-chart-alt"></i>
-                <h3>Digital Marketing</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti dignissimos quaerat, ratione sequi ex modi magni illo.</p>
-                <a href="#" class="btn">Read More</a>
+                <h3>BI & Analytics</h3>
+                <p>Business intelligence dashboards, reporting, data visualization, and performance monitoring.</p>
+                <div class="skill-tags">
+                    <span>Kibana</span><span>Grafana</span><span>Looker Studio</span><span>Power BI</span>
+                </div>
+            </div>
+            <div class="services-box">
+                <i class="bx bx-git-branch"></i>
+                <h3>No-Code Automation & CRM</h3>
+                <p>Automated business workflows, lead management, CRM systems, and third-party API integrations.</p>
+                <div class="skill-tags">
+                    <span>GoHighLevel</span><span>Make</span><span>n8n</span><span>Zapier</span><span>AppSheet</span>
+                    <span>Freshdesk</span><span>Pipedrive</span><span>CRM Development</span><span>REST APIs</span><span>Webhooks</span>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Portfolio Section Design -->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Projects</span></h2>
 
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Featured <span>Projects</span></h2>
         <div class="portfolio-container">
             <div class="portfolio-box">
-                <img src="portfolio1.png" alt="">
+                <img src="portfolio1.png" alt="CRM integration platform">
                 <div class="portfolio-layer">
-                    <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit.</p>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
+                    <h3>CRM Integration Platform</h3>
+                    <p>Freshdesk and Pipedrive automation with calendar and email integrations.</p>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="portfolio2.png" alt="">
+                <img src="portfolio2.png" alt="Talent search engine">
                 <div class="portfolio-layer">
-                    <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit.</p>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
+                    <h3>Talent Search Engine</h3>
+                    <p>Intelligent talent search powered by ranking algorithms and analytics.</p>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="portfolio3.png" alt="">
+                <img src="portfolio3.png" alt="AI commerce solution">
                 <div class="portfolio-layer">
-                    <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit.</p>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
+                    <h3>AI Commerce Solution</h3>
+                    <p>AI integrations designed to improve e-commerce and B2B marketing workflows.</p>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="portfolio4.png" alt="">
+                <img src="portfolio4.png" alt="Analytics data warehouse">
                 <div class="portfolio-layer">
-                    <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit.</p>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
+                    <h3>Analytics Data Warehouse</h3>
+                    <p>Elasticsearch and BigQuery synchronization for reporting and recommendations.</p>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="portfolio5.png" alt="">
+                <img src="portfolio5.png" alt="Performance dashboards">
                 <div class="portfolio-layer">
-                    <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit.</p>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
+                    <h3>Performance Dashboards</h3>
+                    <p>Kibana dashboards for activity, conversion, and platform monitoring.</p>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="portfolio6.png" alt="">
+                <img src="portfolio6.png" alt="Campaign intelligence dashboard">
                 <div class="portfolio-layer">
-                    <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit.</p>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
+                    <h3>Campaign Intelligence</h3>
+                    <p>BI dashboards for campaign performance, conversions, and lead tracking.</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Contact Section Design -->
-     <section class="contact" id="contact">
+
+    <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
+        <div class="contact-details">
+            <a href="mailto:shahzad.it.solution@gmail.com"><i class="bx bx-envelope"></i> shahzad.it.solution@gmail.com</a>
+            <a href="tel:+923001056446"><i class="bx bx-phone"></i> +92 300 1056446</a>
+            <span><i class="bx bx-map"></i> Islamabad, Pakistan</span>
+        </div>
         <form action="#">
             <div class="input-box">
                 <input type="text" placeholder="Full Name">
@@ -159,24 +228,20 @@
                 <input type="number" placeholder="Mobile Number">
                 <input type="text" placeholder="Email Subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
-     </section>
-      <!-- Footer Design -->
-       <footer class="footer">
+    </section>
+
+    <footer class="footer">
         <div class="footer-text">
-       <p>Copyright &copy; 2025 | All Rights Reserved</p>
+            <p>Copyright &copy; 2026 Muhammad Shahzad | All Rights Reserved</p>
         </div>
         <div class="footer-iconTop">
-            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+            <a href="#home" aria-label="Back to top"><i class="bx bx-up-arrow-alt"></i></a>
         </div>
-       </footer>
-       <!-- scroll reveal js file link -->
-        <script src="https://unpkg.com/scrollreveal"></script>
-       <!-- JavaScript file link -->
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
 </body>
-
-
 </html>
